@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+  
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.main {
+    
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+
+.pannel {
+    border-style: solid ;
+    border-color:  rgb(0, 0, 0);
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    background-color:  #f26f5e2c;
+    border-radius: 10px;
+}
+
+.ptop {
+    border-bottom: 3px solid black;
+    justify-content: space-between;
+    padding: 0px 5%;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #3c3b55;
+}
+
+
+.elem {
+    background-color: #f68779;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   border: 3px solid black; /* Add border properties */
+   padding: 10px; /* Add padding to give some space between content and border */
+   border-radius: 10px;
+   /* justify-content: space-between; */
+   /* box-shadow: 0 0 10px 5px rgba(221, 191, 21, 0.7); */
+    /* Add a maximum width for responsiveness */
+    overflow:hidden ;
+    padding-left: 8px;
+}
+
+
+
+.elem h3{
+    
+    display: flex;
+    font-size: 15px;
+  
+    padding: 0 10px;
+    border-radius: 20px;
+    color: #000000;
+}
+
+
+.box {
+    height: 40px;
+    width: 40px;
+    color: black;
+    display: flex;
+align-items: center;
+justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+    
+    border-radius: 5px;
+}
+
+.pbtm {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+
+.bubble {
+    border-style: solid ;
+    border-color:  rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(221, 191, 21);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 20px; /* Increase the font size as desired */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.bubble:hover {
+    box-shadow: 0 0 10px 5px rgba(221, 191, 21, 0.7);
+    cursor: pointer;
+    background-color: #f75842;;
+}
+
+
+
+@media (max-width: 666px) {
+    .ptop {
+        height: 60px;
+        padding: 0 5%;
+    }
+
+    .pbtm {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        height: calc(100% - 60px);
+        padding-top: 15px;
+        padding-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .main {
+        background-position: center;
+        background-size: contain;
+    }
+
+    .elem {
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .box {
+        font-size: 8px;
+    }
+
+    .elem h3 {
+        font-size: 8px;
+    }
+
+    .bubble {
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+    }
+}
